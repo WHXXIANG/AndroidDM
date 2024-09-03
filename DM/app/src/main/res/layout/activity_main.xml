@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="测试界面"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/main_config"
+        android:background="#a7a7a7" />
+
+
+    <TextView
+        android:layout_below="@id/title"
+        android:id="@+id/main_config"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="设置参数"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_below="@id/main_config"
+        android:id="@+id/main_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="启动"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_below="@id/main_start"
+        android:id="@+id/main_business"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/icon_dm"
+        android:gravity="center"
+        android:text="业务触发"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_below="@id/main_business"
+        android:id="@+id/main_kill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="关闭lwM2M"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_below="@+id/main_kill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ri.mt_demo.LogView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

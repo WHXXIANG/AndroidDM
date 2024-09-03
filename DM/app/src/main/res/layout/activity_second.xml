@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/unisdebug_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="切到 DEBUG"
+         />
+
+    <Button
+        android:id="@+id/unisrealse_id"
+        android:layout_height="60dp"
+        android:layout_below="@id/unisdebug_id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:text="切到 REALSE"
+       />
+
+
+</RelativeLayout>

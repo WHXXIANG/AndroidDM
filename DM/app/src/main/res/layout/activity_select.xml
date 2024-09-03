@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sdk_http"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="http_SDK测试"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sdk_lwm2m"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_login"
+        android:gravity="center"
+        android:text="LwM2M_SDK测试"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:text="以下为SDK心跳触发机制，JobServer更为省电与稳定，但是某些系统版调度本会造成JobServer延迟较高导致验收问题，如无超过10分钟误差，可以选择JobServer，否则使用Alarm模式"
+        android:layout_height="wrap_content"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_height="43dp">
+
+        <RadioButton
+            android:id="@+id/jobserverRadio"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:text="JobServer定时模式"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Alarm定时模式"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+    </RadioGroup>
+</LinearLayout>
